@@ -1,0 +1,549 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+nav {
+  background: #1a1a1a;
+  height: 15vh;
+  display: flex   ;
+}
+
+.contenedor-2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.botones p{
+  margin-right: 10px;
+  color: white;
+  font-weight:bold;
+  font-size: 120%;
+}
+.botones button{
+  color: #8B286D;
+  border: 0;
+  background-color: transparent;
+}
+
+nav header div img {
+  width: 12vh;
+  transition: 0.3s;
+  margin-left: 8vh;
+}
+
+nav header div img:hover {
+  transform: scale(1.1);
+  
+}
+
+.botones {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+  margin-right: 2vh;
+  margin-top: -7vh;
+  
+}
+#iniciar {
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #8B286D;
+  border-radius: 0;
+  margin-right: 7px;
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+#iniciar:hover {
+  background-color: #8B286D;
+  border: none;
+}
+
+#Registrarse {
+  background-color: #8B286D;
+  color: white;
+  border: none;
+  border-radius: 0;
+  
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#Registrarse:hover {
+  background-color: transparent;
+  border: 2px solid #8B286D;
+}
+
+
+
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+aside {
+  padding: 2rem;
+  top: 0;
+  position: sticky;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.menu header a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.menu button{
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+ /* Contenedor de la imagen Kirby */
+.text-center {
+position: absolute;
+top: 52%;
+left: 40%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+/* Estilos para la imagen dentro del contenedor */
+#favorito {
+max-width: 100%; /* Ajuste predeterminado */
+max-height: none;
+}
+
+@media (orientation: landscape) {
+#favorito {
+    max-width: 400px; /* Cambia esto según tu preferencia */
+}
+}
+
+@media (orientation: portrait) {
+#favorito {
+    max-height: 400px; /* Cambia esto según tu preferencia */
+}
+}
+@media only screen and (max-width: 1200px) {
+.text-center img {
+    width: 96%; /* Ajuste para 1200px o según sea necesario */
+}
+}
+
+@media only screen and (max-width: 1150px) {
+.text-center img {
+    width: 90%; /* Ajuste para 800px o según sea necesario */
+}
+}
+
+@media only screen and (max-width: 1050px) {
+.text-center img {
+    width: 80%; /* Ajuste para 800px o según sea necesario */
+}
+}
+
+@media only screen and (max-width: 800px) {
+.text-center img {
+    width: 60%; /* Ajuste para 800px o según sea necesario */
+}
+}
+
+@media only screen and (max-width: 600px) {
+.text-center img {
+    width: 50%; /* Ajuste para 600px o según sea necesario */
+}
+}
+
+
+/*********************************************************************************************************************************/
+.button-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5vh;
+ }
+ .button-container a{
+  text-decoration: none;
+  color: black;
+ }
+ .button-container a:hover{
+  text-decoration: none;
+  color: black;
+ }
+ .button-container i {
+  font-size: 2.5vw;
+  cursor: pointer;
+  vertical-align: middle;
+ }
+ 
+ /* Agrega margen izquierdo solo a los dos primeros íconos */
+ .button-container i:nth-child(1){
+  margin-left: 2vw;
+ }
+ 
+ .button-container i:nth-child(2){ 
+  margin-left: 50vw;
+ }
+ 
+ /* Agrega el margen-top al botón de compartir */
+ .button-container i:nth-child(3){
+  margin-left: 2vw;
+ }
+
+@media only screen and (max-width: 1150px) {
+ .button-container{
+  margin-top: 8vh;
+ }
+}
+@media only screen and (max-width: 1050px) {
+ .button-container{
+  margin-top: 12vh;
+ }
+}
+@media only screen and (max-width: 800px) {
+.button-container {
+  margin-top: 18.5vh;
+ }
+.button-container i:nth-child(1) {
+    margin-left: 5vw; /* Ajuste para 800px o según sea necesario */
+}
+
+.button-container i:nth-child(2) {
+    margin-left: 46.5vw; /* Ajuste para 800px o según sea necesario */
+}
+
+.button-container i:nth-child(3) {
+    margin-left: 1vw; /* Ajuste para 800px o según sea necesario */
+}
+}
+@media only screen and (max-width: 740px) {
+.button-container{
+  margin-top: 20vh;
+}
+.button-container i:nth-child(1) {
+    margin-left: 3vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(2) {
+    margin-left: 44vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(3) {
+    margin-left: 1vw; /* Ajuste para 600px o según sea necesario */
+}
+}
+@media only screen and (max-width: 680px) {
+.button-container{
+  margin-top: 22vh;
+}
+.button-container i:nth-child(1) {
+    margin-left: 3vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(2) {
+    margin-left: 44vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(3) {
+    margin-left: 1vw; /* Ajuste para 600px o según sea necesario */
+}
+}
+
+@media only screen and (max-width: 600px) {
+.button-container{
+  margin-top: 26.5vh;
+}
+.button-container i:nth-child(1) {
+    margin-left: 3vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(2) {
+    margin-left: 36vw; /* Ajuste para 600px o según sea necesario */
+}
+
+.button-container i:nth-child(3) {
+    margin-left: 1vw; /* Ajuste para 600px o según sea necesario */
+}
+}
+
+
+/**********************************************************************************************************************************/
+
+#autor, #nombreFondo, #detalles {
+    font-size: 4vw; /* Usar unidades de vista (viewport width) para que el texto sea proporcional al ancho de la pantalla */
+    margin-top: 1.8vw;
+    margin-bottom: 1vw; /* Unidades relativas para márgenes */
+    margin-left: 55vw; /* Unidades relativas para márgenes */
+  }
+  
+  #autor {
+    font-size: 1vw; /* Tamaño más pequeño para el autor */
+  }
+  
+  #detalles {
+    font-size: 1.2vw; /* Tamaño más pequeño para los detalles */
+  }
+  
+  /* Media query para ajustar los estilos en pantallas más pequeñas*/ 
+  @media only screen and (max-width: 1150px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 3vw;
+      cursor: pointer;
+    }
+    
+    #autor {
+      font-size: 1.6vw;
+    }
+    
+    #detalles {
+      font-size: 1.6vw;
+    }
+  }
+  @media only screen and (max-width: 1050px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 4vw;
+      cursor: pointer;
+    }
+    
+    #autor {
+      font-size: 1.5vw;
+    }
+    
+    #detalles {
+      font-size: 1.5vw;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 5vw;
+      cursor: pointer;
+    }
+    
+    #autor {
+      font-size: 2vw;
+    }
+    
+    #detalles {
+      font-size: 2vw;
+    }
+  }
+  @media only screen and (max-width: 740px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 5vw;
+      cursor: pointer;
+      margin-left: 50.3vw;
+    }
+    
+    #autor {
+      font-size: 2vw;
+    }
+    
+    #detalles {
+      font-size: 2vw;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 5vw;
+      cursor: pointer;
+    }
+    
+    #autor {
+      font-size: 2vw;
+    }
+    
+    #detalles {
+      font-size: 2vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #autor, #nombreFondo, #detalles {
+      font-size: 3vw;
+      cursor: pointer;
+      margin-left: 42.5vw;
+    }
+    
+    #autor {
+      font-size: 1.5vw;
+    }
+    
+    #detalles {
+      font-size: 1.5vw;
+    }
+  }
+
+/**********************************************************************************************************************************/
+
+  #botonDescargar {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #8B286D;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+  #botonDescargar {
+    position: absolute;
+    top: 70vh; /* 10% del viewport height desde la parte superior */
+    left: 67.6vw; /* 5% del viewport width desde la izquierda */
+ }
+
+ @media only screen and (max-width: 1150px){
+  #botonDescargar {
+  position: absolute;
+  top: 64vh; /* 10% del viewport height desde la parte superior */
+  left: 67.5vw; /* 5% del viewport width desde la izquierda */
+  }
+}
+
+ @media only screen and (max-width: 1050px){
+    #botonDescargar {
+    position: absolute;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    top: 65vh; /* 10% del viewport height desde la parte superior */
+    left: 72vw; /* 5% del viewport width desde la izquierda */
+    }
+ }
+ @media only screen and (max-width: 800px){
+  #botonDescargar {
+  position: absolute;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  top: 65vh; /* 10% del viewport height desde la parte superior */
+  left: 73vw; /* 5% del viewport width desde la izquierda */
+  }
+}
+ @media only screen and (max-width: 740px){
+  #botonDescargar {
+  position: absolute;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  top: 64vh; /* 10% del viewport height desde la parte superior */
+  left: 69.8vw; /* 5% del viewport width desde la izquierda */
+  }
+}
+@media only screen and (max-width: 680px){
+    #botonDescargar {
+    position: absolute;
+    padding: 4px 8px;
+    font-size: 11px;
+    cursor: pointer;
+    top: 64vh; /* 10% del viewport height desde la parte superior */
+    left: 72vw; /* 5% del viewport width desde la izquierda */
+    }
+ }
+ @media only screen and (max-width: 600px){
+  #botonDescargar {
+  position: absolute;
+  padding: 3.5px 7px;
+  font-size: 9px;  
+  cursor: pointer;
+        
+  top: 60vh; /* 10% del viewport height desde la parte superior */
+  left: 69vw; /* 5% del viewport width desde la izquierda */
+  }
+}
+
+
+  #copiar {
+      background-color: #8B286D; /* Establece el color de fondo del botón */
+      color: white; /* Establece el color del texto del botón */
+      border: none; /* Elimina el borde del botón */
+      border-radius: 5px; /* Redondea las esquinas del botón */
+      padding: 10px 20px; /* Añade espacio alrededor del texto dentro del botón */
+      font-weight: bold; /* Hace el texto del botón en negrita */
+  }
+
+  /* Estilo para el estado hover del botón */
+  #copiar:hover {
+      background-color: #7A1F5D; /* Oscurece el color del botón cuando se pasa el ratón por encima */
+  }
+
+  /* Asegúrate de que los estilos del botón cerrar no interfieran */
+  #copiar {
+      color: white; /* Cambia el color del ícono de cerrar */
+      opacity: 1; /* Asegúrate de que no esté semi-transparente */
+  }
+
+
+/*ALERTA */
+/* Estilos para la notificación */
+.alerta-copiado {
+  visibility: hidden; /* Inicialmente no se muestra */
+  min-width: 250px; /* Ancho mínimo del mensaje */
+  margin-left: -125px; /* Desplazamiento a la izquierda para centrar */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Centrado del texto */
+  border-radius: 2px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  position: fixed; /* Posición fija en la página */
+  z-index: 1; /* Asegura que la alerta se muestre sobre otros elementos */
+  right: 30px; /* Posición desde la derecha */
+  bottom: 30px; /* Posición desde abajo */
+  font-size: 17px; /* Tamaño del texto */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25); /* Sombra para destacar */
+}
+
+/* Clase para mostrar la notificación */
+.alerta-copiado.mostrar {
+  visibility: visible; /* Se hace visible */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Animación de entrada y salida */
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animaciones para la alerta */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+.icono-favorito {
+  color: rgb(255, 247, 4); /* Color del ícono al pasar el cursor por encima */
+}
+.icono-favorito:hover {
+  color: rgb(0, 0, 0); /* Color del ícono al pasar el cursor por encima */
+}

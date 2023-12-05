@@ -1,0 +1,287 @@
+ /* Estilos para "INICIAR SESIÓN" */
+
+ html,
+ body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+ }
+
+
+ body {
+   overflow-x: hidden;
+   /* o overflow-x: scroll; */
+   overflow-y: auto;
+ }
+
+ h1 {
+   color: #000;
+   font-family: 'Mulish', sans-serif;
+   font-weight: bold;
+   text-align: center;
+   font-size: 35px;
+   position: relative;
+   top: -1rem;
+ }
+
+ #registrar {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+ }
+
+ .texto {
+   text-align: end;
+ }
+
+ #perro {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+ }
+
+ .col-lg-6 img {
+   display: block;
+   margin: 0;
+ }
+
+
+ .contenedor {
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+ }
+
+ .formulario {
+   position: relative;
+   top: -20px;
+   /* Ajusta este valor según sea necesario */
+ }
+
+
+ /* Estilo para los campos de entrada (input) */
+ input.form-control {
+   border: 2px solid #8B286D;
+   color: #000000;
+   background: #fff;
+   /* Fondo blanco */
+ }
+
+ /* Estilo para el botón de inicio de sesión */
+ button.btn-primary {
+   border: 2px solid #8B286D;
+   color: #fff;
+   /* Color de texto blanco */
+   background: #8B286D;
+   /* Fondo morado */
+ }
+
+ /* Estilo para el botón de registrarse */
+ a.btn-registrarse {
+   border: 2px solid #8B286D;
+   color: #000000;
+   /* Color de texto morado */
+   padding: 5px 15px;
+   text-decoration: none;
+   display: inline-block;
+   text-align: center;
+   border-radius: 0;
+ }
+
+ /* Cambiar color de fondo del botón de registrarse al pasar el cursor sobre él */
+ a.btn-registrarse:hover {
+   color: #fff;
+   /* Cambiar a texto blanco al pasar el cursor */
+   background-color: #8B286D;
+   /* Cambiar a fondo morado al pasar el cursor */
+
+ }
+
+ /* Estilo personalizado para el botón "INICIA SESION" */
+ .btn-custom {
+   background-color: #8B286D;
+   /* Color de fondo morado */
+   border: 2px solid #8B286D;
+   /* Borde de color morado */
+   border-radius: 0;
+   /* Establece el border-radius a 0 para hacerlo cuadrado */
+   color: #fff;
+   /* Color de texto blanco */
+   width: auto;
+   /* Tamaño del botón ajustado al contenido */
+   display: inline-block;
+   /* Mostrar el botón en línea */
+   text-align: center;
+   /* Centrar el texto en el botón */
+   cursor: pointer;
+   /* Cambiar el cursor a una mano para indicar que es clickeable */
+ }
+
+ /* Estilo para evitar que cambie de color a azul al hacer clic */
+ .btn-custom:focus,
+ .btn-custom:active {
+   background-color: #8B286D;
+   /* Mantener el fondo morado al hacer clic */
+   border-color: #8B286D;
+   /* Mantener el borde morado al hacer clic */
+   color: #fff;
+   /* Mantener el color de texto blanco al hacer clic */
+
+ }
+
+ /* Cambiar color de texto del botón "INICIA SESION" al pasar el cursor sobre él */
+ .btn-custom:hover {
+   color: #fff;
+   /* Mantener el color de texto blanco */
+   background-color: #8B286D;
+   /* Mantener el fondo morado */
+ }
+
+
+ /* Estilos para ajustar el botón de ojo dentro del campo de contraseña */
+ .input-group {
+   position: relative;
+ }
+
+ #show-password-button {
+   position: absolute;
+   right: 0;
+   top: -10px;
+   bottom: 0;
+   padding: 10px;
+   /* Ajusta el espaciado según tus preferencias */
+   cursor: pointer;
+   background: none;
+   border: none;
+ }
+
+ #eye-icon {
+   width: 40px;
+   /* Ajusta el tamaño según tus preferencias */
+   height: 40px;
+ }
+
+
+ /*alerta FONDO*/
+ /* Estilos base para todas las alertas */
+ .alerta-custom {
+   display: none;
+   /* Oculta por defecto */
+   position: fixed;
+   /* Posición fija en la pantalla */
+   bottom: 20px;
+   /* 20 píxeles desde el fondo de la pantalla */
+   right: 20px;
+   /* 20 píxeles desde el lado derecho de la pantalla */
+   border-radius: 10px;
+   /* Bordes redondeados */
+   padding: 12px;
+   /* Espaciado interno */
+   z-index: 1000;
+   /* Asegura que la alerta esté por encima de otros elementos */
+   font-size: 1rem;
+   /* Tamaño de fuente */
+   box-sizing: border-box;
+   /* Asegura que el padding no aumente el tamaño del contenedor */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   /* Sombra para dar profundidad */
+ }
+
+ /* Estilos para alertas de error */
+ .alerta-error {
+   background-color: #840000;
+   /* Fondo rojo oscuro */
+   color: #ffffff;
+   /* Texto en blanco */
+ }
+
+
+ nav {
+  background: #1a1a1a;
+  height: 15vh;
+  display: flex   ;
+}
+
+nav header div img {
+  width: 12vh;
+  transition: 0.3s;
+  margin-left: 8vh;
+}
+
+nav header div img:hover {
+  transform: scale(1.1);
+  
+}
+
+#nav-user{
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px){
+  nav header div img {
+      width: 10vh;
+      margin-left: 2vh;
+  }
+  .column{
+      flex: 30%;
+  }
+  .menu{
+      display: none;
+  }
+  .cuerpo {
+      display: grid;
+      grid-template-columns: none;
+      margin-right: 2vw;
+  }
+  #iniciar {
+      width: 120px;
+      height: 30px;
+      font-size: 13px;
+  }
+  
+  #Registrarse {
+      width: 120px;
+      height: 30px;
+      font-size: 13px;
+  }
+}
+ /* Estilos para alertas de éxito */
+ .alerta-exito {
+   background-color: #333;
+   /* Fondo verde */
+   color: #ffffff;
+   /* Texto en blanco */
+ }
+
+ @media (max-width: 1000px) {
+   h1 {
+     top: 1rem;
+   }
+
+   .contenedor-3 {
+     order: 1;
+   }
+
+   .contenedor-2   {
+     order: 2;
+   }
+
+ }
+
+
+ @media (max-width: 575px) {
+   h1 {
+     top: 1rem;
+   }
+
+   .texto {
+     text-align: start;
+   }
+
+   
+ }
