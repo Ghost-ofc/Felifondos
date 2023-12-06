@@ -10,11 +10,6 @@ $usuario = new Usuario($conexion);
 $correo = $_POST['correo'];
 $contraseña = $_POST['contrasena'];
 
-if (empty($correo) || empty($contraseña)) {
-    echo "Por favor, rellene todos los campos";
-    exit();
-}
-
 
 $login = $usuario->login($correo, $contraseña);
 
