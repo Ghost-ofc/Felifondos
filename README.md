@@ -96,5 +96,5 @@ Las contribuciones son bienvenidas. Por favor:
 ---
 
 <div align="center">
-  <i>Desarrollado con ❤️ por el equipo DantulooTravels</i>
+  <i>Desarrollado con ❤️ por Felines</i>
 </div>
