@@ -93,6 +93,8 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/NuevaFuncionalidad`)
 5. Abre un Pull Request
 
-## 👤 Autor
+---
 
-<i>Desarrollado con ❤️ por Felines</i>
+<div align="center">
+  <i>Desarrollado con ❤️ por el equipo DantulooTravels</i>
+</div>
